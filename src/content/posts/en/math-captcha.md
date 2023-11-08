@@ -14,8 +14,8 @@ Thus, I developed [math-captcha-js](https://github.com/haruki-nikaidou/math-capt
 
 There are some paradigms which which can be selected to generate problems.
 
-+ `triangle-area-simplest`: Calculate the area of a triangle whose base and height is known. They even can be solved by elementary school students.
-+ `triangle-area-simple`: Calculate the area of a triangle where one of the sides of the triangle is the diameter of the circle. The length of the base or the height needs to be derived using the Pythagorean Theorem.
++ `triangle-area-easiest`: Calculate the area of a triangle whose base and height is known. They even can be solved by elementary school students.
++ `triangle-area-easy`: Calculate the area of a triangle where one of the sides of the triangle is the diameter of the circle. The length of the base or the height needs to be derived using the Pythagorean Theorem.
 + `triangle-area-hard`: **Use this only if you can ensure that the user can solve the problem!** Calculate the area of a triangle for which the lengths of three sides are known. *(Because of number theory, there is no guarantee that the solution is an integer. So the solution retains 2 decimal places.)*
 > *Heron's formula:*
 >
@@ -54,5 +54,9 @@ There are some paradigms which which can be selected to generate problems.
 > $$
 > \frac{\sin \angle BAC}{t} = \frac{\sin \angle BAD}{c} + \frac{\sin \angle CAD}{b}
 > $$
++ `line-length-easiest`: Use the properties of circles and parallelograms to get the length of a line segment in a few steps of addition and subtraction.
++ `line-length-easy`: Add the collinear theorem and similar triangles to the `line-length-easiest`.
++ `line-length-cube`: Like `line-length-easy`, but on cube.
+
 
 ## On processing...
