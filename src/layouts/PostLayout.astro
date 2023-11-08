@@ -5,10 +5,11 @@ import '../style/global.css'
 type Props = MarkdownLayoutProps<{
     title: string,
     description: string,
-    language: 'en' | 'zh'
+    language: 'en' | 'zh',
+    enableKatex?: boolean
 }>
 
-const {title, description, language} = Astro.props.frontmatter;
+const {title, description, language, enableKatex} = Astro.props.frontmatter;
 
 ---
 
@@ -19,6 +20,7 @@ const {title, description, language} = Astro.props.frontmatter;
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        {enableKatex? <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet"> : ''}
     </head>
     <body>
         <article>

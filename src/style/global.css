@@ -75,7 +75,7 @@ h2 {
 article {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #ffd6d450;
+    background-color: #ffd6d463;
     min-height: 100%;
     box-sizing: border-box;
     width: 100%;
@@ -100,6 +100,11 @@ article p {
 
 article ul {
     margin-left: 2em;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
 }
 
 math {

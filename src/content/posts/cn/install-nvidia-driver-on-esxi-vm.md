@@ -142,7 +142,7 @@ sudo reboot
 
 这个解决方案要求在`/etc/modprobe.d/nvidia.conf`（如果没有则创建）加上一行
 
-```conf
+```
 options nvidia NVreg_OpenRmEnableUnsupportedGpus=1
 ```
 
@@ -150,4 +150,4 @@ options nvidia NVreg_OpenRmEnableUnsupportedGpus=1
 
 最后，按照[NVIDIA cuDNN安装文档](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb)，安装cuDNN，并成功跑起来了几个模型。
 
-![成功结果](ipfs://bafkreiafr4wbox3dhbumb4vlc7sl4ue4pmq6s2znn36o4wsaxpawmfaune)
+![成功结果](./install-nvidia-driver-on-esxi-vm-1.webp)
