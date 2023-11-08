@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <polygon points="50,150 150,150 130,50" style="fill:none;stroke:black;stroke-width:2" />
+
+    <!-- Draw cevian AD -->
+    <line x1="130" y1="50" x2="90" y2="150" style="stroke:black;stroke-width:2" />
+
+    <!-- Label points A, B, C, and D -->
+    <text x="130" y="45" font-size="15" fill="black">A</text>
+    <text x="30" y="165" font-size="15" fill="black">B</text>
+    <text x="155" y="165" font-size="15" fill="black">C</text>
+    <text x="85" y="165" font-size="15" fill="black">D</text>
+
+    <!-- Label sides -->
+    <text x="115" y="110" font-family="Verdana" font-size="15" fill="black">t</text>
+    <text x="60" y="163" font-family="Verdana" font-size="15" fill="black">u</text>
+    <text x="120" y="163" font-family="Verdana" font-size="15" fill="black">v</text>
+    <text x="90" y="80" font-family="Verdana" font-size="15" fill="black">b</text>
+    <text x="145" y="100" font-family="Verdana" font-size="15" fill="black">c</text>
+    <text x="100" y="180" font-family="Verdana" font-size="15" fill="black">a</text>
+</svg>

@@ -96,6 +96,11 @@ article a:visited {
 article p {
     margin: 1rem 0;
     text-wrap: wrap;
+    line-height: 1.25;
+}
+
+article li {
+    line-height: 1.25;
 }
 
 article ul {
@@ -111,10 +116,6 @@ math {
     overflow-x: auto;
     overflow-y: clip;
     max-width: 100%;
-}
-
-math munderover > * {
-    vertical-align: baseline;  /* 调整为所需的位置 */
 }
 
 ::-webkit-scrollbar {
@@ -134,16 +135,29 @@ math munderover > * {
     background-clip: content-box;
 }
 
-pre {
+article pre {
     padding: 1em;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
-p code,li code {
+article p code,article li code {
     background-color: #fff0f369;
     padding: 1px 6px;
     border-radius: 4px;
     margin: 0 5px;
     border: solid 1px #a38a8f;
+}
+
+article blockquote {
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    border-left: solid #c92f50 5px;
+    border-radius: 5px;
+    background: rgba(252, 239, 234, 0.418);
+    overflow-x: auto;
+}
+
+article li {
+    margin-top: 0.25em;
 }
