@@ -10,21 +10,35 @@
 
 <style>
     header.box {
-    top: 0;
-    min-height: 4rem;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: solid 1px #816967;
-    box-shadow: 0px 2px 10px rgba(53, 33, 37, 0.3);
-    border-radius: 0 0 1rem 1rem;
-    z-index: 1;
-    padding: 0.75rem 1.5rem;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
+        top: 0;
+        min-height: 4rem;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: solid 1px #816967;
+        box-shadow: 0px 2px 10px rgba(53, 33, 37, 0.3);
+        border-radius: 0 0 1rem 1rem;
+        z-index: 1;
+        padding: 0.75rem 1.5rem;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        background-color: #ffd3d965;
+        transition-duration: 0.7s;
+        box-shadow: 5px 5px 10px rgba(53, 33, 37, 0.3);
+        border-bottom: solid 1px #816967;
+        border-radius: 1rem;
+        backdrop-filter: blur(3px);
+    }
+
+    .box:hover {
+        background-color: #ffd6d4c9;
+    }
+
 </style>

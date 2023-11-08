@@ -1,6 +1,7 @@
 ---
 import type { MarkdownLayoutProps } from 'astro';
 import '../style/global.css'
+import Header from '../components/Header.astro';
 
 type Props = MarkdownLayoutProps<{
     title: string,
@@ -23,6 +24,8 @@ const {title, description, language, enableKatex} = Astro.props.frontmatter;
         {enableKatex? <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet"> : ''}
     </head>
     <body>
+        <Header />
+        <div style="height: 5rem;"></div>
         <article>
             <h1>{title}</h1>
             <slot />
