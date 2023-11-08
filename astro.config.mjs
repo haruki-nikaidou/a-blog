@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 
@@ -13,5 +13,8 @@ export default defineConfig({
             // Katex plugin options
             }]
         ]
-    }
+    },
+    image: {
+        service: passthroughImageService(),
+    },
 });
