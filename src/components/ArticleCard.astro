@@ -1,0 +1,40 @@
+---
+interface Props {
+    title: string;
+	discribe: string;
+	href: string;
+}
+
+const { href, title, discribe } = Astro.props;
+---
+
+<div class="article box">
+    <h2>
+        <a href={href}>{title}</a>
+    </h2>
+    <p>
+        {discribe}
+    </p>
+</div>
+
+<style>
+    .article.box {
+        min-width: 15em;
+        max-width: 30em;
+        overflow: hidden;
+        padding: 1rem;
+        box-sizing: border-box;
+        min-height: 10em;
+        margin: 0.75rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .article h2 {
+        margin-bottom: 1em;
+    }
+
+    .article a {
+        text-wrap: wrap;
+        color: #a72e42;
+    }
+</style>

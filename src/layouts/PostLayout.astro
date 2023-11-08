@@ -1,0 +1,29 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+import '../style/global.css'
+
+type Props = MarkdownLayoutProps<{
+    title: string,
+    description: string,
+    language: 'en' | 'zh'
+}>
+
+const {title, description, language} = Astro.props.frontmatter;
+
+---
+
+<!doctype html>
+<html lang={language}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    </head>
+    <body>
+        <article>
+            <h1>{title}</h1>
+            <slot />
+        </article>
+    </body>
+</html>
