@@ -1,18 +1,18 @@
 ---
 layout: '../../../layouts/PostLayout.astro'
-title: 'ESXi中的Debian虚拟机安装NVIDIA显卡驱动'
+title: 'ESXi 中的 Debian 虚拟机安装 NVIDIA 显卡驱动'
 language: 'zh'
 description: ''
 ---
 
-近期，尝试在家庭数据中心搭建一个用来跑AI的服务器。因为我只有一台设备可以带的动3090，买一个新的又太贵了，所以选择用ESXi直通虚拟机。
+近期，尝试在家庭数据中心搭建一个用来跑 AI 的服务器。因为我只有一台设备可以带的动 3090，买一个新的又太贵了，所以选择用 ESXi 直通虚拟机。
 
 虚拟机配置如下：
 
 + EPYC  7302 * 48
-+ 基于ESXi-7.0U3平台
++ 基于 ESXi-7.0U3 平台
 + NVIDIA GeForce RTX 3090
-+ 128G内存
++ 128G 内存
 + Debian GNU/Linux 12 (bookworm) x86_64
 
 ## 主要过程
@@ -25,7 +25,7 @@ description: ''
 
 不做过多赘述，以后可能会补充具体过程。（咕咕咕）反正可以在很多地方找到这几个操作。
 
-在虚拟机内，首先配置apt源，使之包含`non-free-firmware`。 在`/etc/apt/source.list`中，添加`non-free-firmware`，完成后应该形如：
+在虚拟机内，首先配置 apt 源，使之包含`non-free-firmware`。 在`/etc/apt/source.list`中，添加`non-free-firmware`，完成后应该形如：
 
 ```
 deb https://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
@@ -51,7 +51,7 @@ nvidia-driver/unknown 545.23.06-1 amd64
 
 先说如果按照物理机上的方案，直接`apt install`会发生什么。
 
-首先习惯性地先装cuda
+首先习惯性地先装 cuda
 
 ```bash
 sudo apt-get install software-properties-common
@@ -94,11 +94,11 @@ A newer driver may add support for your card.
 Newer driver releases may be available in backports, unstable or experimental.
 ```
 
-这是不合理的，没道理最新版的显卡驱动不支持3090，不过为了保险起见，我还是去[NVIDIA驱动下载界面](https://www.nvidia.com/Download/driverResults.aspx/212964/en-us/)检查是否真的不支持。当然，结果果然是支持3090.
+这是不合理的，没道理最新版的显卡驱动不支持 3090，不过为了保险起见，我还是去 [NVIDIA 驱动下载界面](https://www.nvidia.com/Download/driverResults.aspx/212964/en-us/) 检查是否真的不支持。当然，结果果然是支持 3090.
 
 ## 解决方案
 
-在我不知道到底为什么出现这个问题而反复重启虚拟机时，我突然看到了问题的关键所在。之前，我一直用ssh去远程连接虚拟机，但，当我在VMRC重启虚拟机时，我看到了在开机的最后出现的这样的错误
+在我不知道到底为什么出现这个问题而反复重启虚拟机时，我突然看到了问题的关键所在。之前，我一直用 ssh 去远程连接虚拟机，但，当我在 VMRC 重启虚拟机时，我看到了在开机的最后出现的这样的错误
 
 ```
 [   12.699654] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  530.41.03  Thu Mar 16 19:48:20 UTC 2023
@@ -112,9 +112,9 @@ Newer driver releases may be available in backports, unstable or experimental.
 
 > （以上错误信息复制自论坛，实际略有差异但基本一致）
 
-在google中搜索，得到了[结果](https://forums.developer.nvidia.com/t/solved-rminitadapter-failed-to-load-530-41-03-or-any-nvidia-modules-other-than-450-236-01-linux-via-esxi-7-0u3-passthrough-pci-gtx-1650/253239/2)。
+在 google 中搜索，得到了 [结果](https://forums.developer.nvidia.com/t/solved-rminitadapter-failed-to-load-530-41-03-or-any-nvidia-modules-other-than-450-236-01-linux-via-esxi-7-0u3-passthrough-pci-gtx-1650/253239/2)。
 
-简单来说，需要安装开放版本的NVIDIA驱动而不是默认的。论坛中的回答表示应该使用`.run`文件安装，并附加参数`-m=kernel-open`，我不清楚是否有可以解决这个问题的deb包。
+简单来说，需要安装开放版本的 NVIDIA 驱动而不是默认的。论坛中的回答表示应该使用`.run`文件安装，并附加参数`-m=kernel-open`，我不清楚是否有可以解决这个问题的 deb 包。
 
 在应用这个方案之前，首先需要清理之前的安装。
 
@@ -128,7 +128,7 @@ sudo update-grub2
 sudo reboot
 ```
 
-然后，从NVIDIA驱动下载站下载`.run`格式的驱动。并执行
+然后，从 NVIDIA 驱动下载站下载`.run`格式的驱动。并执行
 
 ```bash
 sudo ./NVIDIA-Linux-x86_64-525.116.04.run -m=kernel-open
@@ -138,7 +138,7 @@ sudo reboot
 
 可惜，这么做之后，还是无法解决问题，`nvidia-smi`仍然什么都找不到。不过这个确实有效果，开机的时候不会报那个错了。
 
-经过搜索之后，我在论坛找到了问题的另一部分的[解决方案](https://forums.developer.nvidia.com/t/nvidia-smi-got-no-devices-were-found-after-nvidia-driver-525-installation-on-ubuntu-20-04-running-with-esxi8-0-passthrough-gtx1650/245142)。
+经过搜索之后，我在论坛找到了问题的另一部分的 [解决方案](https://forums.developer.nvidia.com/t/nvidia-smi-got-no-devices-were-found-after-nvidia-driver-525-installation-on-ubuntu-20-04-running-with-esxi8-0-passthrough-gtx1650/245142)。
 
 这个解决方案要求在`/etc/modprobe.d/nvidia.conf`（如果没有则创建）加上一行
 
@@ -148,6 +148,6 @@ options nvidia NVreg_OpenRmEnableUnsupportedGpus=1
 
 重启，问题解决。
 
-最后，按照[NVIDIA cuDNN安装文档](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb)，安装cuDNN，并成功跑起来了几个模型。
+最后，按照 [NVIDIA cuDNN 安装文档](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb)，安装 cuDNN，并成功跑起来了几个模型。
 
 ![成功结果](./install-nvidia-driver-on-esxi-vm-1.webp)

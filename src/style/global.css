@@ -139,3 +139,11 @@ pre {
     border-radius: 10px;
     box-sizing: border-box;
 }
+
+p code,li code {
+    background-color: #fff0f369;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin: 0 5px;
+    border: solid 1px #a38a8f;
+}
