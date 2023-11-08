@@ -22,7 +22,7 @@ const {title, description, language, enableKatex} = Astro.props.frontmatter;
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         {enableKatex? <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet"> : ''}
-        <title>{`title - Haruki's Blog`}</title>
+        <title>{`${title} - Haruki's Blog`}</title>
     </head>
     <body>
         <Header />
