@@ -2,9 +2,12 @@
 
 ---
 <header class="box">
-    <h1>
-        Haruki's Blog
-    </h1>
+    <a href="/">
+        <h1>
+            Haruki's Blog
+        </h1>
+    </a>
+
     <a href="https://github.com/haruki-nikaidou">GitHub</a>
 </header>
 
@@ -28,6 +31,22 @@
         flex-wrap: wrap;
     }
     
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    header a:hover {
+        text-decoration: none;
+    }
+
+    header a > h1 {
+        transition-duration: 0.3s;
+    }
+
+    header a > h1:hover {
+        color: rgb(124, 30, 30);
+    }
+
     .box {
         background-color: #ffd3d965;
         transition-duration: 0.7s;

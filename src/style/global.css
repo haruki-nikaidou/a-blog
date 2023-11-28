@@ -12,14 +12,11 @@ html {
 
 body {
     width: 100%;
-    height: 100%;
     background-image: url('/background/background_1080p.webp'), linear-gradient(to right, #ffcdb9, #ffb9b9, #FFC0CB);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; 
-    
-    
 }
 
 @media screen and (min-width: 1920px) {
@@ -64,11 +61,13 @@ a:hover {
 h1 {
     font-size: 2.2rem;
     color: #3e1418;
+    margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 1.8rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #bf2c45;
 }
 
@@ -83,6 +82,7 @@ article {
     margin: 0rem auto;
     padding: 1.5rem;
     backdrop-filter: blur(30px);
+    letter-spacing: 0.03em;
 }
 
 article a {
@@ -96,11 +96,11 @@ article a:visited {
 article p {
     margin: 1rem 0;
     text-wrap: wrap;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 article li {
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 article ul {

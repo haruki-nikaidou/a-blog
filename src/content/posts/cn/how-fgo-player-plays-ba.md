@@ -2,7 +2,7 @@
 layout: '../../../layouts/PostLayout.astro'
 title: '前 FGO 玩家是怎么玩碧蓝档案的'
 language: 'zh'
-description: ''
+description: '作为前 FGO 玩家，在碧蓝档案中延续传统技巧：打轴、叠 buff 、算极限伤害。'
 enableKatex: true
 ---
 
