@@ -9,6 +9,9 @@ import '../style/glass-box.css';
 <Layout title="Nikaidou Haruki's blog">
 	<Header />
     <div class="c-blank-5em"></div>
+	<div class="profile-illustration box">
+		<img src="/blog-haruki.svg"/>
+	</div>
     <main id="articles-display">
 		<ArticleCard 
 			href='blog/cn/how-fgo-player-plays-ba'
@@ -85,5 +88,22 @@ import '../style/glass-box.css';
 	.article a {
 		text-wrap: wrap;
 		color: #a72e42;
+	}
+
+	.profile-illustration {
+		max-width: 83rem;
+		width: calc(100vw - 2rem);
+		box-sizing: border-box;
+		padding: 0rem;
+		overflow: hidden;
+		min-height: 20rem;
+		margin: 0 auto;
+	}
+
+	.profile-illustration img {
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 </style>
