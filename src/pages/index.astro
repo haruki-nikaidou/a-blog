@@ -9,8 +9,33 @@ import '../style/glass-box.css';
 <Layout title="Nikaidou Haruki's blog">
 	<Header />
     <div class="c-blank-5em"></div>
-	<div class="profile-illustration box">
-		<img src="/blog-haruki.svg"/>
+	<div class="profile box">
+		<div>
+			<div class="profile-illustration">
+				<img src="/blog-haruki.svg"/>
+			</div>
+			<div class="profile-text">
+				<div class="profile-name">
+					<h3>
+						二階堂春希
+					</h3>
+					<p class="text-sm">にかいどう はるき</p>
+					<p class="text-sm">
+						原型来自《転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件》
+					</p>
+					<p class="text-sm">并非因为是老婆所以用了，而是喜欢作品。</p>
+				</div>
+				<p class="text-sm">
+					一个爱好数学和计算机的普通人，喜欢学习各类知识，立志成为计算机科学家。自由主义，神道信仰。
+				</p>
+				<p>
+					山雨欲来风满楼，故攻八面以铸无双。<br/>孤战非所望，俗安不可期。
+				</p>
+				<p class="text-sm">
+					上面那段话的翻译：局势太吓人了，所以需要扩展能力宽度从而逃出去。一个人战斗不是想要的，只是没法拥有普通人的幸福罢了。
+				</p>
+			</div>
+		</div>
 	</div>
     <main id="articles-display">
 		<ArticleCard 
@@ -30,8 +55,13 @@ import '../style/glass-box.css';
 		/>
 		<ArticleCard
 			href='blog/cn/all-you-need-is-dag'
-			title="浅谈基于DAG Rider的高效区块链实现"
-			discribe='解读知名论文 All you need is DAG. 简单说一说为什么有向无环图性能那么高。'
+			title="浅谈基于DAG Rider的图算法"
+			discribe='解读知名论文 All you need is DAG. 忽略其中区块链专用的部分，简单说一说为什么有向无环图共识性能那么高。（未完成）'
+		/>
+		<ArticleCard 
+			href='blog/cn/large-galgame-resource-site-manage'
+			title='关于运营大型 Galgame 资源站的一些想法'
+			discribe='终点已死，大多数 galgame 资源站都关站避风头。要一个足够强大的资源站。这是一些想法，希望对有运营资源站想法的人能够起到帮助。'
 		/>
     </main>
 </Layout>
@@ -80,20 +110,52 @@ import '../style/glass-box.css';
 		color: #a72e42;
 	}
 
-	.profile-illustration {
+	.profile {
 		max-width: 83rem;
 		width: calc(100vw - 2rem);
 		box-sizing: border-box;
-		padding: 0rem;
-		overflow: hidden;
-		min-height: 20rem;
 		margin: 0 auto;
 	}
 
+	.profile > div {
+		max-width: 64rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 60rem) {
+		.profile > div {
+			flex-direction: column;
+			align-items: center;
+		}
+		.profile .profile-text {
+			width: calc(100% - 2rem);
+		}
+	}
+
+	.profile-illustration {
+		overflow: hidden;
+		min-height: 20rem;
+	}
+
 	.profile-illustration img {
-		height: 100%;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
+		height: 20rem;
+		padding-right: 1rem;
+		float: right;
+	}
+	
+	.profile-text {
+		padding: 1rem;
+		width: calc(50% - 4rem);
+	}
+
+	.profile-text .text-sm {
+		font-size: 0.75rem;
+	}
+
+	.profile-text > * {
+		margin-bottom: 0.75rem;
 	}
 </style>
