@@ -2,6 +2,7 @@
 import type { MarkdownLayoutProps } from 'astro';
 import '../style/global.css'
 import Header from '../components/Header.astro';
+import Copyright from '../components/Copyright.astro';
 
 type Props = MarkdownLayoutProps<{
     title: string,
@@ -32,6 +33,7 @@ const {title, description, language, enableKatex} = Astro.props.frontmatter;
             <h1>{title}</h1>
             <slot />
         </article>
+        <Copyright />
     </body>
 </html>
 
