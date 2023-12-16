@@ -1,10 +1,11 @@
 ---
+import Kb512Banner from "./Kb512Banner.astro";
 
 ---
 
 <footer id="copyright">
     <p>
-        <span property="dct:title">&copy; </span>
+        <span property="dct:title">&copy; Copyright by </span>
         <span
             property="cc:attributionName">Nikaidou Haruki</span
         >
@@ -17,6 +18,12 @@
         >
             CC 署名-非商业性使用 4.0
         </a>
+    </p>
+    <p class="banners">
+        <img height="20px" src="/astro.svg" loading="lazy" />
+        <img height="20px" src="/cloudflare-page.svg" loading="lazy" />
+        <img height="20px" src="/cloudflare.svg" loading="lazy" />
+        <Kb512Banner />
     </p>
 </div>
 
@@ -36,5 +43,18 @@
 
     #copyright a {
         color: brown;
+    }
+
+    #copyright p {
+        max-height: 2rem;
+    }
+
+    .banners {
+        height: 1.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        margin-top: .25rem;
     }
 </style>
