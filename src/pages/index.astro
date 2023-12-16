@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro';
 import '../style/global.css';
 import '../style/glass-box.css';
 import Copyright from '../components/Copyright.astro';
+import ProfileIllustrarion from '../components/ProfileIllustrarion.astro';
 ---
 
 <Layout title="Nikaidou Haruki's blog">
@@ -12,31 +13,35 @@ import Copyright from '../components/Copyright.astro';
     <div class="c-blank-5em"></div>
 	<div class="profile box">
 		<div>
-			<div class="profile-illustration">
-				<img src="/blog-haruki.svg"/>
-			</div>
+			<ProfileIllustrarion />
 			<div class="profile-text">
 				<div class="profile-name">
 					<h3>
-						二階堂春希
+						<a href="/bio/cn">
+							二階堂春希
+						</a>	
 					</h3>
 					<p class="text-sm">にかいどう はるき</p>
 					<p class="text-sm">
 						原型来自《転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件》
 					</p>
-					<p class="text-sm">并非因为是老婆所以用了，而是喜欢作品。</p>
 				</div>
+				<p id="contact-a">
+					<span>
+						联系我:
+					</span>
+					<a href="https://github.com/haruki-nikaidou" target="_blank">
+						<img src="/github.svg" height="20px"/>
+					</a>
+					<a href="https://t.me/HarukiNikaidou" target="_blank">
+						<img src="/telegram.svg" height="20px"/>
+					</a>
+				</p>
 				<p class="text-sm">
-					一个爱好数学和计算机的普通人，喜欢学习各类知识，立志成为计算机科学家。自由主义，神道信仰。
+					一个爱好数学和计算机的普通人，喜欢学习各类知识，立志成为计算机科学家。自由主义，神道信仰
 				</p>
 				<p>
 					山雨欲来风满楼，故攻八面以铸无双。<br/>孤战非所望，俗安不可期。
-				</p>
-				<p class="text-sm">
-					我觉得上面那段文言文不难懂，所以就不翻译了。
-				</p>
-				<p class="text-sm">
-					博客用的是 Astro 作为框架，左边（上面）那个图是我画的svg.
 				</p>
 			</div>
 		</div>
@@ -134,7 +139,7 @@ import Copyright from '../components/Copyright.astro';
 		margin: 0 auto;
 	}
 
-	@media (max-width: 60rem) {
+	@media (max-width: 50rem) {
 		.profile > div {
 			flex-direction: column;
 			align-items: center;
@@ -144,27 +149,27 @@ import Copyright from '../components/Copyright.astro';
 		}
 	}
 
-	.profile-illustration {
-		overflow: hidden;
-		min-height: 20rem;
+	.profile-name a {
+		color: #a72e42;
 	}
 
-	.profile-illustration img {
-		height: 20rem;
-		padding-right: 1rem;
-		float: right;
-	}
-	
 	.profile-text {
 		padding: 1rem;
 		width: calc(50% - 4rem);
 	}
 
-	.profile-text .text-sm {
-		font-size: 0.75rem;
-	}
-
 	.profile-text > * {
 		margin-bottom: 0.75rem;
+	}
+
+	#contact-a {
+		display: flex;
+		height: 1rem;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	#contact-a a {
+		height: 20px;
 	}
 </style>

@@ -160,3 +160,11 @@ article blockquote {
 article li {
     margin-top: 0.25em;
 }
+
+.text-sm {
+    font-size: 0.75rem;
+}
+
+.text-right {
+    text-align: right;
+}
