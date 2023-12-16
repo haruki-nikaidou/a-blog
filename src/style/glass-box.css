@@ -4,7 +4,7 @@
 
 .box {
     background-color: #fcd6db81;
-    transition-duration: 0.5s;
+    transition: background-color 0.5s;
     box-shadow: 5px 5px 10px rgba(53, 33, 37, 0.3);
     border-bottom: solid 1px #816967;
     border-radius: 1rem;
