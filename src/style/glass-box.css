@@ -3,16 +3,16 @@
 }
 
 .box {
-    background-color: #ffd3d965;
-    transition-duration: 0.7s;
+    background-color: #fcd6db81;
+    transition-duration: 0.5s;
     box-shadow: 5px 5px 10px rgba(53, 33, 37, 0.3);
     border-bottom: solid 1px #816967;
     border-radius: 1rem;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
 }
 
 .box:hover {
-    background-color: #ffd6d4c9;
+    background-color: #ffe6e4a2;
 }
 
 .line-center {
