@@ -24,6 +24,11 @@ import Kb512Banner from "./Kb512Banner.astro";
         <img height="20px" src="/cloudflare-page.svg" loading="lazy" />
         <img height="20px" src="/cloudflare.svg" loading="lazy" />
         <Kb512Banner />
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;height:28px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
     </p>
 </div>
 
@@ -56,5 +61,9 @@ import Kb512Banner from "./Kb512Banner.astro";
         justify-content: center;
         gap: .5rem;
         margin-top: .25rem;
+    }
+
+    .banners * {
+        max-height: 1.5rem
     }
 </style>
