@@ -106,6 +106,10 @@ article ul {
     margin-left: 2em;
 }
 
+article ol {
+    margin-left: 2em;
+}
+
 article img {
     max-width: 100%;
     height: auto;
