@@ -51,9 +51,12 @@ const posts = (await getCollection('blog'))
     </Card>
     <section id="pinned-container">
         {
-            posts.map((post) => (
-                    <PostCard {...post.data} slug={post.slug}/>
-            ))
+            posts.map((post) => {
+                const {slug, data} = post;
+                return (
+                    <PostCard slug={slug as string} {...data}/>
+                    )
+                })
         }
     </section>
 

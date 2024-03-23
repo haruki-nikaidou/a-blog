@@ -14,8 +14,8 @@ const isActive = href === pathname || href === '/' + subpath?.[0];
 <Button
     variant={isActive ? 'solid' : 'light'}
     as="link"
-    href={href}
-    {...props}
+    href={href?.toString()}
+    target={props.target??'_self'}
 >
     <slot/>
 </Button>
