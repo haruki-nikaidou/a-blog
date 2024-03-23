@@ -2,6 +2,7 @@
 title: '关于运营大型 Galgame 资源站的一些想法'
 description: '终点已死，大多数 galgame 资源站都关站避风头。要一个足够强大的资源站。这是一些想法，希望对有运营资源站想法的人能够起到帮助。'
 pubDate: 'Dec 4 2023'
+heroImage: '/cover/large-galgame-resource-site-manage.jpg'
 ---
 
 终点已死，大多数 galgame 资源站都关站避风头。要一个足够强大的资源站。这是一些想法，希望对有运营资源站想法的人能够起到帮助。

@@ -2,6 +2,7 @@
 title: '机场用户选择套餐的数学建模'
 description: '为一个机场建立数学模型，模拟用户的选择情况。并且，给出了参数估计和降低成本的方案。'
 pubDate: 'Nov 28 2023'
+heroImage: '/cover/proxy-user-select-model.png'
 ---
 
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">
