@@ -1,63 +1,56 @@
 ---
-
+import HeaderLink from './HeaderLink.astro';
+import {Card, Typo, Link} from "@koibumi-design/solidjs";
+import {GLOBAL_STYLE, SITE_TITLE} from '../consts';
 ---
-<header class="box">
-    <a href="/">
-        <h1>
-            Haruki's Blog
-        </h1>
-    </a>
 
-    <a href="https://github.com/haruki-nikaidou">GitHub</a>
-</header>
+<Card class="head-container" variant={GLOBAL_STYLE}>
+	<header>
+		<nav>
+			<Typo variant="h1">
+				<Link href="/" id="title">
+					{SITE_TITLE}
+				</Link>
+			</Typo>
+			<div class="internal-links">
+				<HeaderLink href="/">首页</HeaderLink>
+				<HeaderLink href="/blog">文章</HeaderLink>
+				<HeaderLink href="https://github.com/koibumi-design/astro-blog">GitHub</HeaderLink>
+			</div>
+		</nav>
+	</header>
+</Card>
+
 
 <style>
-    header.box {
-        top: 0;
-        min-height: 4rem;
-        width: 100%;
-        position: fixed;
+	.head-container {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+
+	#title {
+		text-decoration: none;
+	}
+
+	#title:hover {
+		text-decoration: underline;
+	}
+
+    nav {
+        padding: 0 0.5rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        border-bottom: solid 1px #816967;
-        box-shadow: 0px 2px 10px rgba(53, 33, 37, 0.3);
-        border-radius: 0 0 1rem 1rem;
-        z-index: 1;
-        padding: 0.75rem 1.5rem;
-        box-sizing: border-box;
+        justify-content: space-between;
+        max-width: 90rem;
+        margin: 0 auto;
         flex-wrap: wrap;
-    }
-    
-    header h1 {
-        margin-bottom: 0;
+        gap: 1rem;
     }
 
-    header a:hover {
-        text-decoration: none;
+    .internal-links {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
     }
-
-    header a > h1 {
-        transition-duration: 0.3s;
-    }
-
-    header a > h1:hover {
-        color: rgb(124, 30, 30);
-    }
-
-    .box {
-        background-color: #ffd3d965;
-        transition-duration: 0.7s;
-        box-shadow: 5px 5px 10px rgba(53, 33, 37, 0.3);
-        border-bottom: solid 1px #816967;
-        border-radius: 1rem;
-        backdrop-filter: blur(3px);
-    }
-
-    .box:hover {
-        background-color: #ffd6d4c9;
-    }
-
 </style>

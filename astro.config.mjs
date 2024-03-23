@@ -1,8 +1,10 @@
-import { defineConfig, passthroughImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 
-import mdx from "@astrojs/mdx";
+import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,8 +14,6 @@ export default defineConfig({
       // Katex plugin options
     }]]
   },
-  image: {
-    service: passthroughImageService()
-  },
-  integrations: [mdx()]
+  site: 'https://blog.plr.moe',
+  integrations: [mdx(), sitemap(), solidJs()]
 });

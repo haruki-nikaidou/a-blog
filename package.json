@@ -1,5 +1,5 @@
 {
-  "name": "a-blog",
+  "name": "koibumi-astro-blog",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,11 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
-    "@astrojs/mdx": "^1.1.5",
-    "astro": "^3.4.3",
-    "rehype-katex": "^6.0.3",
-    "remark-math": "^5.1.1",
-    "typescript": "^5.2.2"
+    "@astrojs/check": "^0.5.8",
+    "@astrojs/mdx": "^2.2.0",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/solid-js": "^4.0.1",
+    "@koibumi-design/solidjs": "^0.0.8",
+    "astro": "^4.5.2",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
+    "solid-js": "^1.8.16",
+    "typescript": "^5.4.2"
   }
 }
