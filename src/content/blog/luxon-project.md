@@ -2,7 +2,7 @@
 title: '抗转生的备份 - 鲁克西翁计划'
 description: '介绍了一个即使丢点一切也能重新获得的究极备份技术。'
 pubDate: 'Dec 20 2023'
-heroImage: '/cover/luxon-project.jpg'
+heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/496008dd-e0e8-49aa-6ce8-44f239a10e00/public'
 ---
 
 资料备份的究极，就是：即使与世界远方的另一个人交换身体，也能找回自己的大部分资料。
