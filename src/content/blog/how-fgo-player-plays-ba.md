@@ -3,7 +3,7 @@ title: '前 FGO 玩家是怎么玩碧蓝档案的'
 description: '作为前 FGO 玩家，在碧蓝档案中延续传统技巧：打轴、叠 buff 、算极限伤害。'
 pinned: true
 pubDate: 'Nov 28 2023'
-heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/6d4828e4-e61f-4c79-4822-3cfef5800f00/public'
+heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/6d4828e4-e61f-4c79-4822-3cfef5800f00/small'
 ---
 
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">

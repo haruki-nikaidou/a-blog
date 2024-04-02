@@ -3,7 +3,7 @@ title: 'ESXi 中的 Debian 虚拟机安装 NVIDIA 显卡驱动'
 description: '尝试在 ESXi 虚拟出的 Debian 系统中，安装 NVIDIA 显卡驱动。遇到了几个问题，并且最终找到了解决方案。'
 pubDate: 'Nov 28 2023'
 pinned: true
-heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/1ccd914c-455c-4eee-8bde-b28aae802100/public'
+heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/1ccd914c-455c-4eee-8bde-b28aae802100/small'
 ---
 
 近期，尝试在家庭数据中心搭建一个用来跑 AI 的服务器。因为我只有一台设备可以带的动 3090，买一个新的又太贵了，所以选择用 ESXi 直通虚拟机。

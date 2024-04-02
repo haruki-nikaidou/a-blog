@@ -2,7 +2,7 @@
 title: '记一次 MariaDB 的主从备份配置'
 description: 'MariaDB 主从备份配置的一些注意事项。'
 pubDate: 'Apr 2 2024'
-heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/51881f55-2f8d-47ec-da3d-5b97542ff400/public'
+heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/51881f55-2f8d-47ec-da3d-5b97542ff400/small'
 ---
 
 ## 什么是主从备份，为什么要主从备份

@@ -2,7 +2,7 @@
 title: '机场用户选择套餐的数学建模'
 description: '为一个机场建立数学模型，模拟用户的选择情况。并且，给出了参数估计和降低成本的方案。'
 pubDate: 'Nov 28 2023'
-heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/24692d76-b802-4d1b-caea-0f625f462700/public'
+heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/24692d76-b802-4d1b-caea-0f625f462700/small'
 ---
 
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">
