@@ -4,6 +4,7 @@ main {
   max-width: 70rem;
   padding: 1rem;
   margin: 4rem auto;
+  width: 100%;
 }
 
 
@@ -103,6 +104,7 @@ article {
 
     code span {
       font-family: 'Fira Code', monospace;
+      color: $color-slate-50;
     }
   }
 
