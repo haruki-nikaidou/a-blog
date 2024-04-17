@@ -117,7 +117,7 @@ H@H 需要申请才能参加，你需要注册账号，然后在 [H@H 主页](ht
 - 你必须要有至少 10GiB 的空闲硬盘空间
 - 服务器必须一直在线
 
-我这里上报了 950Mbps 的上下行带宽，并且附带了 speedtest-cli 的测速结果，硬盘空间给了 1T，等了一两天就通过了。
+我这里上报了 950Mbps 的上下行带宽，并且附带了 speedtest-cli 的测速结果，硬盘空间给了 1T，等了几个小时就通过了。
 
 之后，重新访问 [H@H 主页](https://e-hentai.org/hentaiathome.php)，在 Your Active Clients 下点击你的 new client，录入客户端设置。
 
