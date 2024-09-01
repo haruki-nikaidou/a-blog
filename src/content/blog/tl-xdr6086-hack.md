@@ -152,4 +152,8 @@ dd bs=131072 conv=sync of=/dev/mtdblock9 seek=28 if=/tmp/usb/xdr608x-fip.bin
 
 ### 安装 OpenWrt
 
-目前还没装上，稍后更新
+目前 OpenWrt 对 XDR-6086 的支持很差，我在恩山论坛上找到了一个`ImmortalWrt 21.02-SNAPSHOT r0-e1b4487`的 6086 固件才成功安装上。
+
+暂不明确能否二次刷机成自己编译的 OpenWrt，但通过 U-Boot 直接刷入自行编译的 ImmortalWrt 并不能启动。
+
+需要注意的是，XDR-6086 的 CPU 性能似乎不够，在 OpenClash 和 SSR Plus 上都只能跑到 300Mbps.
