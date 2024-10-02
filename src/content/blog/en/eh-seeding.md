@@ -1,5 +1,5 @@
 ---
-title: 'How to and way seed on E-Hentai'
+title: 'How to and why seed on E-Hentai'
 description: 'Intro 3 currency of E-Hentai and seeding method'
 pubDate: 'Apr 16 2024'
 editDate: 'Oct 2 2024'
