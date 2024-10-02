@@ -7,15 +7,18 @@ type Props = HTMLAttributes<'a'>;
 const {href, class: className, ...props} = Astro.props;
 
 const {pathname} = Astro.url;
-const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + subpath?.[0];
+
+function diffASlash(a: string, b: string) {
+    return a === b || a === b + '/' || a + '/' === b;
+}
+const isActive = diffASlash(pathname, (href?.toString() || ""));
 ---
 
 <Button
     variant={isActive ? 'solid' : 'light'}
     as="link"
     href={href?.toString()}
-    target={props.target??'_self'}
+    target={'_self'}
 >
     <slot/>
 </Button>

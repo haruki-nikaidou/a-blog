@@ -2,6 +2,14 @@
 import HeaderLink from './HeaderLink.astro';
 import {Card, Typo, Link} from "@koibumi-design/solidjs";
 import {GLOBAL_STYLE, SITE_TITLE} from '../consts';
+import {getRelativeLocaleUrl} from "astro:i18n";
+
+interface Props {
+	lang: string
+}
+
+let {lang} = Astro.props;
+
 ---
 
 <Card class="head-container" variant={GLOBAL_STYLE}>
@@ -13,8 +21,8 @@ import {GLOBAL_STYLE, SITE_TITLE} from '../consts';
 				</Link>
 			</Typo>
 			<div class="internal-links">
-				<HeaderLink href="/">首页</HeaderLink>
-				<HeaderLink href="/blog">文章</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(lang, "")}>首页</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(lang, "/blog")}>文章</HeaderLink>
 				<HeaderLink href="https://github.com/koibumi-design/astro-blog">GitHub</HeaderLink>
 			</div>
 		</nav>

@@ -9,6 +9,8 @@ const blog = defineCollection({
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
+		lang: z.enum(['zh', 'en', 'jp']).default('zh'),
+		tags: z.array(z.string()).optional(),
 		heroImage: z.string().optional(),
 		pinned: z.boolean().optional(),
 		notCompleted: z.boolean().optional(),

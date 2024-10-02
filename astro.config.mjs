@@ -17,6 +17,20 @@ export default defineConfig({
   image: {
     service: passthroughImageService()
   },
+  i18n: {
+    defaultLocale: "zh",
+    locales: ["zh", "en", "jp"],
+    routing: {
+      prefixDefaultLocale: true
+    }
+  },
   site: 'https://blog.plr.moe',
-  integrations: [mdx(), sitemap(), solidJs()]
+  integrations: [mdx(), sitemap(), solidJs()],
+  vite: {
+    resolve: {
+      alias: {
+        '@': '/src'
+      }
+    }
+  }
 });

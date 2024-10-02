@@ -10,15 +10,17 @@ import "../styles/article.scss"
 type Props = CollectionEntry<'blog'>['data'];
 
 const {title, description} = Astro.props;
+const currentPath = Astro.url.pathname;
+const lang = currentPath.split('/')[1];
 ---
 
-<html lang="en">
+<html lang={lang}>
 <head>
     <BaseHead title={title} description={description}/>
 </head>
 
 <body>
-<Header/>
+<Header lang={lang}/>
 <main>
     <Card variant={GLOBAL_STYLE}>
         <article>
