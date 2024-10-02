@@ -9,11 +9,25 @@ interface Props {
   heroImage?: string
   title: string
   pubDate: Date
+  editDate?: Date
   lang: string
   description?: string
 }
 
-const {slug, heroImage, title, pubDate, description, lang} = Astro.props
+const {slug, heroImage, title, pubDate, editDate, description, lang} = Astro.props
+
+function t_editedAt(lang: string) {
+  switch (lang) {
+    case "zh":
+      return "编辑于";
+    case "en":
+      return "Edited at";
+    case "ja":
+      return "編集日";
+    default:
+      return "Edited at";
+  }
+}
 ---
 
 <Card
@@ -43,7 +57,9 @@ const {slug, heroImage, title, pubDate, description, lang} = Astro.props
     {description}
   </Typo>
   <Typo class="date">
-    {pubDate.toLocaleDateString()}
+    {pubDate.toLocaleDateString()}{
+      editDate === undefined ? "" : ` | ${t_editedAt(lang)} ${editDate.toLocaleDateString()}`
+  }
   </Typo>
 </Card>
 
@@ -61,8 +77,9 @@ const {slug, heroImage, title, pubDate, description, lang} = Astro.props
   .date {
     text-align: right;
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    font-size: 0.875rem;
+    bottom: 0.875rem;
+    right: 0.875rem;
   }
 
   .img-container {

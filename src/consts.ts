@@ -4,7 +4,14 @@
 export const SITE_TITLE = '春希のブログ';
 export const SITE_DESCRIPTION = '春希のブログ';
 
-export const BIO = "孤战非所望，俗安不可期。"
+export function t_bio(language: string) {
+  switch (language) {
+    case 'zh':
+      return '孤战非所望，俗安不可期。';
+    case 'en':
+      return "If lost is a kind of force, I\'m not cowered.";
+  }
+}
 
 export const GLOBAL_STYLE: 'quartz' | 'glass' | 'lightGlass' = 'lightGlass'
 

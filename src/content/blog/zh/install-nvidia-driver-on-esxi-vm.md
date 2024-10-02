@@ -151,4 +151,4 @@ options nvidia NVreg_OpenRmEnableUnsupportedGpus=1
 
 最后，按照 [NVIDIA cuDNN 安装文档](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb)，安装 cuDNN，并成功跑起来了几个模型。
 
-![成功结果](./install-nvidia-driver-on-esxi-vm-1.webp)
+![成功结果](https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/cde3baea-80be-4404-0917-8b9d1b718900/small)

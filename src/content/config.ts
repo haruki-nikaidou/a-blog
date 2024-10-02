@@ -8,8 +8,8 @@ const blog = defineCollection({
 		description: z.string(),
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
-		updatedDate: z.coerce.date().optional(),
-		lang: z.enum(['zh', 'en', 'jp']).default('zh'),
+		editDate: z.coerce.date().optional(),
+		lang: z.enum(['zh', 'en', 'ja']).default('zh'),
 		tags: z.array(z.string()).optional(),
 		heroImage: z.string().optional(),
 		pinned: z.boolean().optional(),

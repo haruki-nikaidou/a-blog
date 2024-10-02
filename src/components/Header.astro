@@ -9,7 +9,30 @@ interface Props {
 }
 
 let {lang} = Astro.props;
-
+function t_homePage(lang: string) {
+	switch (lang) {
+		case "zh":
+			return "首页";
+		case "en":
+			return "Home";
+		case "ja":
+			return "ホーム";
+		default:
+			return "Home";
+	}
+}
+function t_articles(lang: string) {
+	switch (lang) {
+		case "zh":
+			return "文章";
+		case "en":
+			return "Articles";
+		case "ja":
+			return "記事";
+		default:
+			return "Articles";
+	}
+}
 ---
 
 <Card class="head-container" variant={GLOBAL_STYLE}>
@@ -21,8 +44,8 @@ let {lang} = Astro.props;
 				</Link>
 			</Typo>
 			<div class="internal-links">
-				<HeaderLink href={getRelativeLocaleUrl(lang, "")}>首页</HeaderLink>
-				<HeaderLink href={getRelativeLocaleUrl(lang, "/blog")}>文章</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(lang, "")}>{t_homePage(lang)}</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(lang, "/blog")}>{t_articles(lang)}</HeaderLink>
 				<HeaderLink href="https://github.com/koibumi-design/astro-blog">GitHub</HeaderLink>
 			</div>
 		</nav>

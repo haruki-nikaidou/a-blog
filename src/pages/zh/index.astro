@@ -9,7 +9,7 @@ import PostCard from "@/components/PostCard.astro";
 
 // meta
 import {getCollection} from 'astro:content';
-import {SITE_TITLE, SITE_DESCRIPTION, GLOBAL_STYLE, BIO} from '@/consts';
+import {SITE_TITLE, SITE_DESCRIPTION, GLOBAL_STYLE, t_bio} from '@/consts';
 
 import '@/styles/home.scss';
 
@@ -35,7 +35,7 @@ const posts = (await getCollection('blog'))
                 {SITE_TITLE}
             </Typo>
             <Typo>
-                {BIO}
+                {t_bio("zh")}
             </Typo>
             <div>
                 <Typo>

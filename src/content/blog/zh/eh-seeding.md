@@ -3,6 +3,7 @@ title: '记 E 站做种'
 description: '介绍了 E-Hentai 的 3 种货币以及做种方法'
 pubDate: 'Apr 16 2024'
 heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/814af32f-d3ff-467a-3a53-036105e93e00/small'
+lang: 'zh'
 ---
 
 ## 什么是 E 站

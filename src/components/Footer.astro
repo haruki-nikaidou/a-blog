@@ -11,7 +11,12 @@ const today = new Date();
     >
         &copy; {today.getFullYear()}&nbsp;{COPYRIGHT_NAME} |
         <Link target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1">CC Attribution-NonCommercial 4.0</Link><br>
-        Powered by <Link href="https://github.com/koibumi-design/astro-blog">Koibumi Design</Link>
+        Powered by <Link href="https://github.com/koibumi-design/astro-blog">Koibumi Design</Link><br>
+        <span class="language-select">
+            <Link href="/en">English</Link> |
+            <Link href="/zh">中文</Link> |
+            <Link href="/ja">日本語</Link>
+        </span>
     </Card>
 </footer>
 
@@ -23,5 +28,9 @@ const today = new Date();
 
     footer {
         text-align: center;
+    }
+
+    .language-select {
+        font-size: 0.8rem;
     }
 </style>
