@@ -1,7 +1,7 @@
 ---
 title: '函数式响应式编程在 web 开发中的应用'
 description: '深入探讨函数式响应式编程（FRP）在大型Web项目中的应用，特别强调了JavaScript在函数式编程中的优势和特点。'
-pinned: true
+notCompleted: true
 pubDate: 'Jan 18 2024'
 heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/d7cb8ec9-52c3-450f-55a0-7f8e00fb5500/small'
 ---

@@ -3,6 +3,7 @@ title: '黑崎小雪也能看下去的会计学原理科普（上）'
 description: '简单易懂的会计学科普，介绍了公认会计原则、会计等式、财务报表、复式记账法等基础概念。'
 heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/6245110b-41f5-4f02-e733-aefbef4f4b00/small'
 pubDate: 'Apr 20 2024'
+notCompleted: true
 ---
 
 为什么叫「黑崎小雪也能看下去的会计学原理科普」呢？大概是这样的一个场景：
