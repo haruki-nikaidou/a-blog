@@ -9,7 +9,7 @@ export function t_bio(language: string) {
     case 'zh':
       return '孤战非所望，俗安不可期。';
     case 'en':
-      return "If lost is a kind of force, I\'m not cowered.";
+      return "If solitary exodus is a kind of imperative, I\'m not cowered.";
   }
 }
 
