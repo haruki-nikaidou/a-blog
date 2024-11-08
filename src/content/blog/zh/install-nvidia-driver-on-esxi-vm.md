@@ -10,7 +10,7 @@ heroImage: 'https://imagedelivery.net/6gszw1iux5BH0bnwjXECTQ/1ccd914c-455c-4eee-
 
 虚拟机配置如下：
 
-+ EPYC  7302 * 48
++ EPYC 7302 * 48
 + 基于 ESXi-7.0U3 平台
 + NVIDIA GeForce RTX 3090
 + 128G 内存
