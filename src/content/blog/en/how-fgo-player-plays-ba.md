@@ -18,7 +18,7 @@ After playing Blue Archive for 2 years, I'm confident that I surpass most player
 
 All skilled FGO plays must have done these 4 things: **RNG hunting**, **min-maxing the sequence**, **do math before challenging**, **stacking the buffs**. Who hasn't done these things must be a beginner.
 
-RNG hunting doesn't need much explanation, as it's very common. It's seeking perfect card draws or critical hits in FGO, or in similar situation in Blue Archive.
+RNG hunting doesn't need much explanation, as it's very common. It's seeking perfect card draws or critical hits in FGO, or in similar scenarios in Blue Archive.
 
 Whether it's daily quests, speed-running challenges, maintaining continuous buffs, or solo boss fights - all of these strategies require careful sequencing. In my opinion, the most impressive examples are the [Mash solo run against Arash in Nero celebration](https://www.youtube.com/watch?v=aBZjzCCJ248) and the [13 Command Spells clear vs Kirschtaria]((https://www.youtube.com/watch?v=yIHW-iOGbQ0)) - with the latter being **designed to be impossible** by the developer, yet players found a way.
 
@@ -77,7 +77,7 @@ Level insufficiency is a hidden damage reduction factor that many players are un
 When a student's level is lower than the enemy's, damage is reduced by 2% for each level difference, up to a maximum reduction of 60%.
 
 I guess the level insufficiency mechanic becomes particularly relevant when a new raid difficulty is introduced,
-as there are few other situations where students' levels fall below enemy levels. 
+as there are few other scenarios where students' levels fall below enemy levels. 
 This serves as a special challenge for top players. When a new raid difficulty launches, 
 the boss's level always exceeds the maximum student level, making it extremely difficult, conquerable only by top players. 
 Achieving a two-digit ranking under these conditions provides them with a significant sense of accomplishment.
@@ -98,5 +98,36 @@ buffs from **identical or similar** skills (such as Himari's EX and Kotama Camp'
 
 Sequencing in Blue Archive is much more difficult than in FGO. 
 
-Unlike the turn-based FGO, Blue Archive features a continuous timeline and a skill circular queue.
+Unlike the turn-based FGO, Blue Archive features a continuous timeline and a skill circular queue. 
+In FGO, you can clear most challenge with 3T burst or ultra long battle. 
+But in Blue Archive, because the time is limited, it is impossible to launch long battle.
 
+The general key for most bosses in Blue Archive is minimum the extra length of skill circular queue, 
+because usually, you want to use the dealer's skill more often.
+
+> There are exceptions in final restriction release. 
+> In final restriction release, the major damage may be not from EX skill but normal attack.
+
+At first glance, Ui's skill might seem more cost-efficient than Fuuka (New Year)'s, as Ui reduces EX cost twice for 3 cost while Fuuka needs 4 cost (2 cost × 2) for the same effect. However, Fuuka often performs better in practice, especially in common scenarios where you apply two buffs to your dealer - one from a striker student and one from a special student. With Fuuka, you can naturally cycle through supporter skills until your dealer's skill becomes available again. In contrast, when using Ui, you'll be forced to use an additional useless skill to complete the cycle, as using Ui's skill again would override its previous effect like using 3 cost but only reduces once.
+
+## What FGO doesn't Have
+
+FGO is the second most expensive gacha game among all gacha games I know of, only cheaper than Genshin Impact. It is very enough to only spend 4500 JPY in Blue Archive per month.
+
+Because getting new servant is too expensive, competition between players doesn't exist, and it is possible to clear most challenges with serval certain servants. But, in Blue Archive, there is fucking Total Assault.
+
+Someones did cheat in total assault and got banned. I don't know why they take risks with their account. There is absolutely no extra reward from cheating.
+
+### Position
+
+It is rumored that many top players use CV tools or assisted aiming tool in the total assault. That makes sense because position is quite important in Blue Archive.
+
+Obviously, FGO doesn't have position. 
+
+My understanding of positioning mechanics in Blue Archive is primarily limited to two scenarios: evading lethal attacks (such as Shiro & Kuro) and manipulating targeting priority (like ensuring students target Goz's real body).
+
+### Defensive or Aggressive
+
+### Long Battle
+
+## Summary
